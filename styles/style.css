@@ -133,10 +133,10 @@ body{
   position: absolute;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   width: 1018px;
   margin-top: 667px;
-  margin-left: 372px;
+  margin-left: 422px;
 }
 
 .cover__description-text{
@@ -154,12 +154,13 @@ body{
 }
 
 .bet-button{
-  position: absolute;
+  position: relative;
   z-index: 1;
-  width: 193px;
-  height: 30px;
-  margin-left:  743px; 
+  width: 257px;
+  height: 52px;
+  margin-left:  50px; 
   border: 1px solid #FFF;
+  padding-left: 2px;
   color: #FFF;
   font-family: Raleway;
   font-weight: 400;
@@ -397,10 +398,10 @@ body{
 }
 
 .footer__social-list{
-  width: 240px;
-  height: 48px;
   display: flex;
   justify-content: space-between;
+  width: 240px;
+  height: 48px;
 }
 
 .footer__social-list-item{
