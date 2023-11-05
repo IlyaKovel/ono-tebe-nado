@@ -5,9 +5,9 @@
 }
 
 body {
-  width: 1440px;
+  max-width: 1440px;
   background-color: #fff;
-  margin: 0;
+  margin: auto;
   font-family: Raleway, sans-serif;
 }
 
