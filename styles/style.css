@@ -58,6 +58,7 @@
 .cover{
   background-image: url("../images/cover.jpg");
   min-height: 757px;
+  min-width: 1440px;
   position: relative;
   display: flex;
   flex-flow: column;
@@ -163,6 +164,7 @@
   text-align: center;
   text-transform: uppercase;
   word-spacing: 15px;
+  text-align: start;
 }
 
 .bet-button{
@@ -216,8 +218,8 @@
   position: relative;
   flex-flow: column;
   flex-shrink: 0;
-  min-width: 430px;
-  min-height: 450px;
+  width: 430px;
+  height: 450px;
   margin-right: 50px;
 }
 
