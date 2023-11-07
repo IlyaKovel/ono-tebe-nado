@@ -64,8 +64,7 @@
 
 .cover{
   background-image: url("../images/cover.jpg");
-  min-height: 757px;
-  min-width: 1440px;
+  max-width: 1440px;
   position: relative;
   display: flex;
   flex-flow: column;
@@ -87,7 +86,7 @@
   padding-bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
   z-index: 1;
   gap: 20px;
   column-gap: 0;
@@ -99,6 +98,7 @@
   grid-column-start: 1;
   grid-row-start: 1;
   justify-content: flex-start;
+  max-height: 100px;
 }
 
 .cover__title__second{
@@ -106,13 +106,21 @@
   grid-row-start: 2;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  margin-left: 80px;
+  margin-top: 15px;
 }
 
 .cover__title__third{
   grid-column-start: 3;
   grid-row-start: 3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
+  min-height: 100px;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-top: 8px;
 }
 
 .cover__title__h1{
@@ -168,9 +176,8 @@
   font-size: 22px;
   font-style: normal;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
-  word-spacing: 15px;
+  word-spacing: 12px;
   text-align: start;
 }
 
@@ -191,16 +198,16 @@
   text-align: center;
   background-color: transparent;
   text-transform: uppercase;
+  right: -28px;
 }
 
 .lots{
   flex-shrink: 0;
   display: flex;
   flex-flow: column;
-  margin-top: 180px;
+  margin-top: 182px;
   margin-right: 50px;
 }
-/* test */
 
 .lots__heading{
   margin-bottom: 27px;
@@ -228,7 +235,7 @@
   flex-shrink: 0;
   width: 430px;
   height: 450px;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 .card__title{
@@ -284,14 +291,21 @@
 .lots__look-more-link{
   padding-top: 30px;
   padding-left: 90px;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .about{
   display: grid;
   flex-shrink: 0;
-  grid-template-columns: auto 885px;
+  grid-template-columns: 430px 885px;
   margin-top: 181px;
   margin-left: 50px;
+  gap: 25px;
 }
 
 .about__logo{
@@ -357,17 +371,17 @@
   justify-content: space-between;
   margin-top: 180px;
   margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 90px;
 }
 
 .header-footer__address{
   width: 240px;
-  text-wrap: wrap;
 }
 
 .footer__menu{
   flex-shrink: 0;
   width: 149px;
-  height: 64px;
 }
 
 .footer__menu-list{
@@ -396,6 +410,7 @@
 .footer__social-list{
   display: flex;
   justify-content: space-between;
+  min-width: 240px;
 }
 
 .footer__social-list-item{
