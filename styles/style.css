@@ -30,14 +30,14 @@
 }
 
 .header__link{
-  text-decoration: none;
-  text-decoration-line: underline;
   color: #000;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
+  text-decoration: none;
+  text-decoration-line: underline;
 }
 
 .without__underline{
@@ -55,19 +55,19 @@
 }
 
 .header__logo{
+  flex-shrink: 0;
   min-width: 148px;
   min-height: 105px;
-  flex-shrink: 0;
-  padding-left: 209px;
   padding-right: 355px;
+  padding-left: 209px;
 }
 
 .cover{
-  background-image: url("../images/cover.jpg");
-  max-width: 1440px;
   position: relative;
   display: flex;
   flex-flow: column;
+  max-width: 1440px;
+  background-image: url("../images/cover.jpg");
 }
 
 .overlay{
@@ -80,16 +80,16 @@
 }
 
 .cover__title{
-  padding-top: 165px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 0;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px;
-  z-index: 1;
   gap: 20px;
   column-gap: 0;
+  padding-top: 165px;
+  padding-right: 50px;
+  padding-bottom: 0;
+  padding-left: 50px;
   letter-spacing: 30px;
 }
 
@@ -102,25 +102,25 @@
 }
 
 .cover__title__second{
+  display: flex;
   grid-column-start: 2;
   grid-row-start: 2;
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100px;
-  margin-left: 80px;
   margin-top: 15px;
+  margin-left: 80px;
 }
 
 .cover__title__third{
+  display: flex;
   grid-column-start: 3;
   grid-row-start: 3;
-  display: flex;
   justify-content: end;
   min-height: 100px;
-  padding-left: 20px;
-  margin-left: 20px;
   margin-top: 8px;
+  margin-left: 20px;
+  padding-left: 20px;
 }
 
 .cover__title__h1{
@@ -158,14 +158,14 @@
 }
 
 .cover__description{
-  padding-top: 147px;
-  padding-left: 422px;
-  padding-bottom: 50px;
-  padding-right: 50px;
-  white-space: nowrap;
   z-index: 1;
   display: flex;
   align-items: center;
+  padding-top: 147px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 422px;
+  white-space: nowrap;
 }
 
 .cover__description-text{
@@ -176,13 +176,14 @@
   font-size: 22px;
   font-style: normal;
   line-height: 28px;
-  text-transform: uppercase;
-  word-spacing: 12px;
   text-align: start;
+  text-transform: uppercase;
+  word-spacing: 18px;
 }
 
 .bet-button{
   position: relative;
+  right: -28px;
   z-index: 1;
   width: 257px;
   height: 52px;
@@ -196,15 +197,14 @@
   font-style: normal;
   line-height: normal;
   text-align: center;
-  background-color: transparent;
   text-transform: uppercase;
-  right: -28px;
+  background-color: transparent;
 }
 
 .lots{
-  flex-shrink: 0;
   display: flex;
   flex-flow: column;
+  flex-shrink: 0;
   margin-top: 182px;
   margin-right: 50px;
 }
@@ -222,15 +222,15 @@
 }
 
 .lots__cards{
-  width: 430px;
   display: flex;
   justify-content: space-between;
+  width: 430px;
   margin-left: 50px;
 }
 
 .card{
-  display:flex;
   position: relative;
+  display:flex;
   flex-flow: column;
   flex-shrink: 0;
   width: 430px;
@@ -239,6 +239,7 @@
 }
 
 .card__title{
+  z-index: 1;
   margin-top: 50px;
   margin-left: 40px;
   color: #FFF;
@@ -249,10 +250,10 @@
   line-height: 120%; /* 26.4px */
   text-decoration-line: underline;
   text-transform: uppercase;
-  z-index: 1;
 }
 
 .card__text{
+  z-index: 0;
   margin-bottom: 50px;
   margin-left: 40px;
   color: #FFF;
@@ -261,7 +262,6 @@
   font-size: 20px;
   font-style: normal;
   line-height: 120%; /* 24px */
-  z-index: 0;
 }
 
 .card__text__first{
@@ -293,9 +293,9 @@
   padding-left: 90px;
   color: #000;
   font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 
@@ -303,9 +303,9 @@
   display: grid;
   flex-shrink: 0;
   grid-template-columns: 430px 885px;
+  gap: 25px;
   margin-top: 181px;
   margin-left: 50px;
-  gap: 25px;
 }
 
 .about__logo{
@@ -317,10 +317,10 @@
   align-items: center;
   width: 240px;
   height: 240px;
+  margin-left: 95px;
+  border-radius: 50%;
   padding: 0px 95px;
   background-color: #000;
-  border-radius: 50%;
-  margin-left: 95px;
 }
 
 .about__logo-image{
@@ -370,9 +370,9 @@
   flex-shrink: 0;
   justify-content: space-between;
   margin-top: 180px;
-  margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 90px;
+  margin-left: 50px;
 }
 
 .header-footer__address{
